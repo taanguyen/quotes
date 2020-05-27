@@ -1,0 +1,24 @@
+form
+{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.form-label
+{
+    font-family: "Nunito Sans";
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#user-quote
+{
+    color: rgba(0,0,0,0.5);
+    height: 20px;
+    width: 500px;
+}
+
+
+
+
