@@ -21,5 +21,6 @@ submit.addEventListener("click", async event =>{
     const inputResponse = await fetch('/', options);
     const quoteResponse = await inputResponse.text();
     console.log(quoteResponse);
+   
     document.getElementById("response-quote").scrollIntoView();    
 });
