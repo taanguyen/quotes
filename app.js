@@ -1,6 +1,5 @@
 const express = require('express');
 const Datastore = require('nedb');
-const { response } = require('express');
 
 const app = express();
 const db = new Datastore('quotes.db');
