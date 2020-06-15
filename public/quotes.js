@@ -19,8 +19,11 @@ submit.addEventListener("click", async event =>{
         body: userQuoteElem.value
     }
     const inputResponse = await fetch('/', options);
-    const quoteResponse = await inputResponse.text();
-    console.log(quoteResponse);
+    const quoteResponse = await inputResponse.json();
+    // extract random quote for display
+    const quoteForDisplay = quoteResponse.quote;
     userQuoteElem.value = "";
     document.getElementById("response-quote").scrollIntoView();    
+    // display quote 
+    document.getElementById("response-quote").textContent = quoteForDisplay;
 });
